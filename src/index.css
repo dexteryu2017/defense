@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Arial Black", "Helvetica Neue", "Arial", sans-serif;
+  --font-mono: "Courier New", "Courier", monospace;
+  
+  --color-bg-dark: #05070a;
+  --color-accent-primary: #00f2ff;
+  --color-accent-secondary: #ff3e00;
+  --color-accent-warning: #ffcc00;
+}
+
+body {
+  background-color: #05070a;
+  color: #ffffff;
+  font-family: var(--font-display);
+}
+
+.canvas-bg {
+  background: linear-gradient(to bottom, #05070a 0%, #0a1018 100%);
+}
+
+.title-text {
+  font-family: var(--font-display);
+  letter-spacing: -2px;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.label-mono {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.score-display {
+  font-family: var(--font-display);
+  font-size: 64px;
+  line-height: 1;
+  color: var(--color-accent-warning);
+  text-shadow: 0 0 20px rgba(255, 204, 0, 0.4);
+}
+
+.status-bg-text {
+  font-family: var(--font-display);
+  font-size: 120px;
+  letter-spacing: -5px;
+  line-height: 0.8;
+  opacity: 0.05;
+  user-select: none;
+}
