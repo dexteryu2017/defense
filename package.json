@@ -1,7 +1,8 @@
 {
-  "name": "react-example",
+  "name": "victor-nova-defense",
   "private": true,
-  "version": "0.0.0",
+  "description": "Victor Nova Defense - A high-intensity tower defense game inspired by Missile Command.",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",

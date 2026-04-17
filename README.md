@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Victor Nova Defense (Victor新星防御)
 
-# Run and deploy your AI Studio app
+A high-intensity, bilingual (English/Chinese) Missile Command style tower defense game. Protect your cities and launchers from falling rockets using missile interceptors.
 
-This contains everything you need to run your app locally.
+## 🚀 Deployment
 
-View your app in AI Studio: https://ai.studio/apps/b100b1ee-86cc-4c92-80b3-65c4d3aa0370
+This project is optimized for deployment on **Vercel** or any other static hosting service (Netlify, GitHub Pages, etc.).
 
-## Run Locally
+### Deploy to Vercel
 
-**Prerequisites:**  Node.js
+1. **Export to GitHub**: Use the "Export to GitHub" option in the Google AI Studio settings menu.
+2. **Connect to Vercel**: Import the repository into your Vercel account.
+3. **Environment Variables**: Add your `GEMINI_API_KEY` to Vercel's Environment Variables if you use any AI features.
+4. **Build Settings**:
+   - Framework Preset: `Vite`
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
 
+## 🛠 Development
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## 🎮 Gameplay
+
+- **Defensive Goal**: Protect 6 cities and 3 launchers.
+- **Controls**: Click or tap anywhere to fire an interceptor.
+- **Victory**: Reach 1000 points.
+- **Defeat**: All cities or all launchers are destroyed.
+
+## 📄 License
+
+SPDX-License-Identifier: Apache-2.0
