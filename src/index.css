@@ -25,6 +25,71 @@ body {
   letter-spacing: -2px;
   line-height: 0.9;
   text-transform: uppercase;
+  padding-right: 0.5rem; /* Fix Header R clipping */
+}
+
+.gotg-title {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  background: linear-gradient(
+    90deg, 
+    #00f2ff 0%, 
+    #0099ff 25%, 
+    #ffffff 50%, 
+    #0099ff 75%, 
+    #00f2ff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 12px rgba(0, 242, 255, 0.4));
+  font-style: italic;
+  transform: skewX(-5deg);
+  padding: 0 2.5rem; /* Increased padding to prevent 'R' clipping */
+  display: inline-block;
+  animation: title-shine 4s linear infinite;
+  background-size: 200% auto;
+}
+
+@keyframes title-shine {
+  from { background-position: 200% center; }
+  to { background-position: 0% center; }
+}
+
+.gotg-subtitle {
+  font-family: var(--font-mono);
+  color: #00f2ff;
+  letter-spacing: 0.5em;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  text-shadow: 0 0 8px rgba(0, 242, 255, 0.6);
+}
+
+.title-glow {
+  position: relative;
+}
+
+.title-glow::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  filter: blur(15px);
+  opacity: 0.5;
+  background: linear-gradient(to bottom, #00f2ff, #0099ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cinematic-bg {
+  background: radial-gradient(circle at center, rgba(0, 242, 255, 0.05) 0%, transparent 70%),
+              radial-gradient(circle at 20% 30%, rgba(255, 62, 0, 0.03) 0%, transparent 50%),
+              #05070a;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
 }
 
 .label-mono {

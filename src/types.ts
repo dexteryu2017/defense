@@ -1,4 +1,4 @@
-export type GameState = 'START' | 'PLAYING' | 'SUCCESS' | 'GAMEOVER';
+export type GameState = 'START' | 'PLAYING' | 'SUCCESS' | 'GAMEOVER' | 'LEVEL_CLEAR';
 
 export interface Point {
   x: number;
